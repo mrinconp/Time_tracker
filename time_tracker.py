@@ -40,6 +40,16 @@ def active_windows():
 def finish():
     print('Ingresaste "end", el programa finalizará.')
 
+def break_time(n):
+    while True:
+        timer = datetime.now()
+        n = datetime.now()
+        if n == '0:20:00:00':
+            print('Hora de descansar.')
+
+
+
+
 # now threading1 runs regardless of user input
 threading1 = threading.Thread(target=active_windows)
 threading1.daemon = True
